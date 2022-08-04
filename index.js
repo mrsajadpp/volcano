@@ -6,6 +6,7 @@ let badWords = require('./data/badwords.js');
 let say = require('./data/say.js');
 let chId = require('./data/channel.js');
 let roleId = require('./data/role.js');
+let listen = require('./server.js');
 let remove = require('./detector/badword.js');
 client.on('ready', () => {
   console.log(client.user.username+' ready!');
@@ -36,4 +37,5 @@ client.on('messageCreate', message => {
     remove(client,message,badWords,say,roleId,chId);
   }
 });
+listen();
 client.login(process.env.TOKEN);
