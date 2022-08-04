@@ -1,0 +1,30 @@
+{
+  "name": "volcano",
+  "version": "1.0.0",
+  "description": "Discord badwords detector bot.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrsajadpp/volcano.git"
+  },
+  "keywords": [
+    "volcano"
+  ],
+  "author": "sajad pp",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mrsajadpp/volcano/issues"
+  },
+  "homepage": "https://github.com/mrsajadpp/volcano#readme",
+  "dependencies": {
+    "discord.js": "^13.9.2",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "nodemon": "^2.0.19",
+    "path": "^0.12.7"
+  }
+}
