@@ -30,7 +30,7 @@ function remove (client, message,badWords,say,roleId,chId) {
       }
     }
     message.delete();
-    message.channel.send(`🩹 Removed <@${message.author.id}>'s Message as it had a bad word in it used %**#*. Bad word's strictly prohibited this server.`).catch(console.error);
+    message.channel.send(`🩹 Removed <@${message.author.id}>'s Message as it had a bad word in it used ${message.content}. Bad word's strictly prohibited this server.`).catch(console.error);
   }
 }
 module.exports = remove;
